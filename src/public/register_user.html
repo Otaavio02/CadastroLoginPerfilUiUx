@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="/css/register_user.css">
+    <script src="/js/register_user.js"></script>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form id="registerForm">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="nome_cliente" required placeholder="Digite seu nome completo">
+            <small id="nameHelp" class="form-text">Por favor, digite seu nome completo.</small>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email_cliente" required placeholder="Digite seu endereço de email">
+            <small id="emailHelp" class="form-text">Insira um endereço de email válido.</small>
+        </div>
+        <div>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="senha_cliente" required placeholder="Digite sua senha (mínimo 6 caracteres)" minlength="6">
+            <small id="passwordHelp" class="form-text">Sua senha deve ter pelo menos 6 caracteres.</small>
+        </div>
+        <button type="submit" class="register-button">Cadastrar</button>
+        <div id="registerError" class="error" style="display: none;"></div>
+        <div id="registerSuccess" class="success" style="display: none;"></div>
+    </form>
+    <p>Já tem uma conta? <a href="/login">Faça login</a></p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Restaurante</title>
+    <link rel="stylesheet" href="/css/register_restaurant.css">
+    <script src="/js/register_restaurant.js"></script>
+</head>
+<body>
+    <h1>Cadastro de Restaurante</h1>
+    <form id="registerRestaurantForm">
+        <div>
+            <label for="name">Nome do Restaurante:</label>
+            <input type="text" id="name" name="nome_restaurante" required placeholder="Ex: Sabores do Brasil">
+            <small id="nameHelp" class="form-text">Informe o nome do seu restaurante.</small>
+        </div>
+        <div>
+            <label for="phone">Telefone (opcional):</label>
+            <input type="text" id="phone" name="telefone_restaurante" placeholder="Ex: (11) 99999-9999">
+            <small id="phoneHelp" class="form-text">Número de contato do restaurante (opcional).</small>
+        </div>
+        <div>
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" name="endereco_restaurante" required placeholder="Ex: Rua das Flores, 123, Bairro Feliz">
+            <small id="addressHelp" class="form-text">Digite o endereço completo do restaurante.</small>
+        </div>
+        <button type="submit" class="register-restaurant-button">Cadastrar Restaurante</button>
+        <div id="registerRestaurantError" class="error" style="display: none;"></div>
+        <div id="registerRestaurantSuccess" class="success" style="display: none;"></div>
+        <p class="comeback"><a href="/login">Voltar para a página inicial</a></p>
+    </form>
+</body>
+</html>
